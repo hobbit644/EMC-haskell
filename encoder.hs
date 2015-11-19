@@ -2,6 +2,7 @@ import System.IO
 import Data.Char
 
 main = do hSetBuffering stdout NoBuffering
+
           putStrLn "What encoding should be used?"
           name <- getLine
           contents <- readFile name
